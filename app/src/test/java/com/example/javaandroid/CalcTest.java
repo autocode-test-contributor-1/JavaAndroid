@@ -1,8 +1,8 @@
 package com.example.javaandroid;
 
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import static org.junit.Assert.assertEquals;
+import org.junit.jupiter.api.Test;
 
 /**
  * Example local unit test, which will execute on the development machine (host).
@@ -17,16 +17,19 @@ public class CalcTest {
         calc = new Calc();
         assertEquals(4.0, calc.add(2.0, 2.0), 0.1);
     }
+
     @Test
     public void calc_subtract_isCorrect() {
         calc = new Calc();
         assertEquals(1.0, calc.subtract(3.0, 2.0), 0.1);
     }
+
     @Test
     public void calc_multiply_isCorrect() {
         calc = new Calc();
         assertEquals(12.0, calc.multiply(6.0, 2.0), 0.1);
     }
+
     @Test
     public void calc_divide_isCorrect() {
         calc = new Calc();
